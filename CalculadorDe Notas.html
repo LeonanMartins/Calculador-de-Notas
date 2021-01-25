@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(163, 119, 7);
+        }
+        h3 {
+            color: blue;
+        }
+        h4{
+            color: rgba(212, 7, 48, 0.952);
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Escola Aprender</b></h1>
+</body>
+<script>
+    var matricula = window.prompt('Digite o numero de matricula: ')
+    var nome = window.prompt('Digite o primeiro nome do aluno: ')
+    var sobre = window.prompt('Digite o sobrenome do aluno: ')
+    var materia = window.prompt('Qual a matéria a ser declarada a nota: ')
+    var nota1 = Number(window.prompt('Digite a nota do primeiro Bimestre: '))
+    var nota2 = Number(window.prompt('Digite a nota do segundo bimestre: '))
+    var media = (nota1 + nota2) / 2
+    document.write(`Matricula: ${matricula}</br>`)
+    document.write(`Nome do Aluno: ${nome}  ${sobre}</p>`)
+    document.write(`Nota do Primeiro Bimestre:</br>`)
+    document.write(`Nota do Segundo Bimestre: </br>`)
+    document.write(`Média: ${media} </br>`)
+    document.write(media >= 7 ?'<h3>Aluno Aprovado !</h3>':'<h4><b>Aluno Reprovado !</b></h4>')
+    //Usei acima operadores ternánios, tendo o ? para uma resposta verdadeira (aprovado) e : para resposta falsa (reprovado)
+ </script>
+</html>
